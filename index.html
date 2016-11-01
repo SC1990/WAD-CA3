@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet"  href="style.css">
+</head>
+
+<body>
+  <h1>My Address Book</h1>
+  <h2>Hi user123</h2>
+  <br>
+    
+ 
+
+
+  <button id="button" onclick="getAllContacts()">View All Contacts</button>
+
+
+  <script>
+    function getAllContacts() {
+      var getContacts = new XMLHttpRequest();
+      getContacts.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("button").innerHTML = this.responseText;
+        }
+      };
+      getContacts.open("GET", "index.php", true);
+      getContacts.send();
+    }
+  </script>
+
+
+</body>
+
+</html>
