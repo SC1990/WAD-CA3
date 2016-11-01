@@ -1,32 +1,59 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<link rel="stylesheet"  href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <h1>My Address Book</h1>
   <h2>Hi user123</h2>
-  <br>
-    
- 
+  
 
 
   <button id="button" onclick="getAllContacts()">View All Contacts</button>
+  
 
-
+  <!--function to print all contacts-->
   <script>
     function getAllContacts() {
+      var closeBtn = "CLOSE WINDOW" ;
+      
+      //create new XMLHttpRequest object
+      //with this - can update parts of web page without reloading whole page
+      //requests data from server
       var getContacts = new XMLHttpRequest();
+
+      //stores function to be called when readyState status changes
       getContacts.onreadystatechange = function() {
+        //readyState holds status of XMLHttpRequest object
+        //4 = request finished and response is ready
+        //status 200 = 'ok', status 404 = 'not found'
         if (this.readyState == 4 && this.status == 200) {
-          document.getElementById("button").innerHTML = this.responseText;
+          document.getElementById("button").innerHTML = this.responseText + closeBtn ; // returns data as string
         }
+
       };
-      getContacts.open("GET", "index.php", true);
+
+      //send request to index.php file on server 
+      getContacts.open("GET", "index.php");
       getContacts.send();
     }
   </script>
+
+  <br>
+  <br>
+  <p>---------------------------------------------------------------</p>
+
+  <div id="searchWindow">
+       <p><b>Search for contact:</b></p>
+    <form>
+      <!--onkeyup = when user releases key-->
+     First name: <input type="text" onkeyup="showContactHint(this.value)">
+    </form>
+    <p>Suggestions: <span id="contactHint"></span></p>
+  </div>
+ 
 
 
 </body>
