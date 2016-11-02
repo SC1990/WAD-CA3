@@ -4,56 +4,26 @@
 
 <contact>
 <name>John Smith</name>
-<address>
-  <street>123 Main St</street>
-  <town>Crumlin</town>
-  <city>Dublin 12</city>
-  <country>Ireland</country>
-</address>
-<telephoneNum>
-  <mobileNum>0851234567</mobileNum>
-  <homeNum>4551234</homeNum>
-  <workNum>0857654321</workNum>
-</telephoneNum>
-<email>johnSmith@gmail.com</email>
+<!--<email>johnSmith@gmail.com</email>
+<phoneNum>0854512282</phoneNum>
 <company>ABC Finance</company>
-<companyRole>CEO</companyRole>
+<companyRole>CEO</companyRole>-->
 </contact>
 
 <contact>
 <name>Paul Jones</name>
-<address>
-  <street>11A Dame St</street>
-  <town>City Centre</town>
-  <city>Dublin 1</city>
-  <country>Ireland</country>
-</address>
-<telephoneNum>
-  <mobileNum>0851568842</mobileNum>
-  <homeNum>4561155</homeNum>
-  <workNum>0878672292</workNum>
-</telephoneNum>
-<email>paulJones@gmail.com</email>
+<!--<email>paulJones@gmail.com</email>
+<phoneNum>0871514211</phoneNum>
 <company>XYZ Ltd</company>
-<companyRole>Accountant</companyRole>
+<companyRole>Accountant</companyRole>-->
 </contact>
 
 <contact>
 <name>Mary Reilly</name>
-<address>
-  <street>41 East street</street>
-  <town>Ballybrack</town>
-  <city>Dublin 16</city>
-  <country>Ireland</country>
-</address>
-<telephoneNum>
-  <mobileNum>0835631458</mobileNum>
-  <homeNum>4542579</homeNum>
-  <workNum>0857215545</workNum>
-</telephoneNum>
-<email>maryReilly@gmail.com</email>
-<company>123 Salon</company>
-<companyRole>Owner</companyRole>
+<!--<email>maryReilly@gmail.com</email>
+<phoneNum>0857228545</phoneNum>
+<company>Mary's Salon</company>
+<companyRole>Owner</companyRole>-->
 </contact>
 
 </contacts>
