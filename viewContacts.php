@@ -1,5 +1,5 @@
 <?php
-echo "All Contacts <br> <br>";
+echo "<br> All Contacts <br> <br>";
 
 //load xml file
 $xml=simplexml_load_file("contacts.xml") or die("Error: Cannot create object");
