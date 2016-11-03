@@ -1,29 +1,44 @@
-<?xml version='1.0' encoding='UTF-8'?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 <contacts>
 
 <contact>
 <name>John Smith</name>
-<!--<email>johnSmith@gmail.com</email>
+<email>johnSmith@gmail.com</email>
 <phoneNum>0854512282</phoneNum>
 <company>ABC Finance</company>
-<companyRole>CEO</companyRole>-->
+<companyRole>CEO</companyRole>
 </contact>
 
 <contact>
 <name>Paul Jones</name>
-<!--<email>paulJones@gmail.com</email>
+<email>paulJones@gmail.com</email>
 <phoneNum>0871514211</phoneNum>
 <company>XYZ Ltd</company>
-<companyRole>Accountant</companyRole>-->
+<companyRole>Accountant</companyRole>
 </contact>
 
 <contact>
 <name>Mary Reilly</name>
-<!--<email>maryReilly@gmail.com</email>
+<email>maryReilly@gmail.com</email>
 <phoneNum>0857228545</phoneNum>
 <company>Mary's Salon</company>
-<companyRole>Owner</companyRole>-->
+<companyRole>Owner</companyRole>
+</contact>
+
+<contact>
+  <name>Robert Jones</name>
+  <email>juju@gmail.com</email>
+  <phoneNum>0851234567</phoneNum>
+  <company>IBM</company>
+  <companyRole>CEO</companyRole>
+</contact>
+
+<contact>
+  <name>Thomas Byrne</name>
+  <email>tom@gmail.com</email>
+  <phoneNum>0872584681</phoneNum
+    ><company>Microsoft</company>
+  <companyRole>Software Engineer</companyRole>
 </contact>
 
 </contacts>

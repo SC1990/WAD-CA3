@@ -14,7 +14,7 @@
 
   <button id="button" onclick="getAllContacts()">View All Contacts</button>
   <div id="allContacts"></div>
-  
+
 
 
 
@@ -22,7 +22,7 @@
   <!--function to print all contacts-->
   <script>
     function getAllContacts() {
-      
+
 
       //create new XMLHttpRequest object
       //with this - can update parts of web page without reloading whole page
@@ -44,36 +44,22 @@
       //send request to index.php file on server 
       getContacts.open("GET", "viewContacts.php");
       getContacts.send();
-      
+
       //temporary solution to close contacts div
-      document.getElementById("button").onclick = function closeContacts(){
+      document.getElementById("button").onclick = function closeContacts() {
         location.reload();
       };
     }
-    
-   
   </script>
 
   <br>
   <br>
-  
-  
-  <p>---------------------------------------------------------------</p>
-  <p>---------------------------------------------------------------</p>
-  
-  
-  
 
-  <!--
-  <div id="searchWindow">
-    <p><b>Search for contact:</b></p>
-    <form>
-      
-      First name: <input type="text" onkeyup="showContactHint(this.value)">
-    </form>
-    <p>Suggestions: <span id="contactHint"></span></p>
-  </div>
-  -->
+
+  <p>---------------------------------------------------------------</p>
+  <p>---------------------------------------------------------------</p>
+
+
 
 
 </body>

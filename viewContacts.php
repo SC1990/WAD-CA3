@@ -6,9 +6,10 @@ $xml=simplexml_load_file("contacts.xml") or die("Error: Cannot create object");
 
 //print each child element of contacts
 foreach($xml->children() as $contacts) { 
-  echo $contacts->name . "<br>";
-  echo $contacts->email . "<br>";
-  echo $contacts->company . "<br>";
-  echo $contacts->companyRole . "<br> <br>";
+  echo "Name: " . $contacts->name . "<br>";
+  echo "Email: " . $contacts->email . "<br>";
+  echo "Phone Number: " . $contacts->phoneNum . "<br>";
+  echo "Company: " . $contacts->company . "<br>";
+  echo "Role: " . $contacts->companyRole . "<br> <br>";
 }
 ?>

@@ -6,26 +6,26 @@ if(isset($_POST['insert'])){
   $xml->load('contacts.xml');
   
   $name = $_POST['name'];
- /* $email = $_POST['email'];
+  $email = $_POST['email'];
   $phoneNum = $_POST['phoneNum'];
   $company = $_POST['company'];
-  $companyRole = $_POST['companyRole'];*/
+  $companyRole = $_POST['companyRole'];
   
   $rootTag = $xml->getElementsByTagName("contacts")->item(0);
   
   $contactTag = $xml->createElement("contact");
   
   $nameTag = $xml->createElement("name", $name);
- /* $emailTag = $xml->createElement("email", $email);
+  $emailTag = $xml->createElement("email", $email);
   $phoneNumTag = $xml->createElement("phoneNum", $phoneNum);
   $companyTag = $xml->createElement("company", $company);
-  $companyRoleTag = $xml->createElement("companyRole", $companyRole);*/
+  $companyRoleTag = $xml->createElement("companyRole", $companyRole);
   
   $contactTag->appendChild($nameTag);
-  /*$contactTag->appendChild($emailTag);
+  $contactTag->appendChild($emailTag);
   $contactTag->appendChild($phoneNumTag);
   $contactTag->appendChild($companyTag);
-  $contactTag->appendChild($companyRoleTag);*/
+  $contactTag->appendChild($companyRoleTag);
   
   $rootTag->appendChild($contactTag);
   
@@ -35,9 +35,8 @@ if(isset($_POST['insert'])){
 ?>
 
 <html>
-<body>
-
-<!-- Add new contact-->
+  <body>
+    <!-- Add new contact-->
   <h3 id="addNew">Add New Contact</h3>
   
   
@@ -47,7 +46,6 @@ if(isset($_POST['insert'])){
     Name:<br>
     <input type="text" name="name">
     <br>
-    <!--
     Email:<br>
     <input type="text" name="email">
     <br>
@@ -58,11 +56,10 @@ if(isset($_POST['insert'])){
     <input type="text" name="company">
     <br>
     Company Role:<br>
-    <input type="text" name="companyRole"> -->
+    <input type="text" name="companyRole">
     <br>
     <br>
     <input type="submit" name="insert" value="Add">
   </form>
-  
   </body>
-  </html>
+</html>
