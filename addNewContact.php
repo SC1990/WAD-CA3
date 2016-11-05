@@ -1,6 +1,13 @@
 <?php 
 
-
+//isset() - Determine if a variable is set and is not NULL
+//($_POST['insert']) - create array with key/value pairs and collect form data from form when user hits add button
+//submit button name = 'insert'
+//-> operator = access a value or method of this object
+//so, 1. create new DomDocument object which represents an xml document
+//2. place/load contacts.xml in this object
+//$ = variable prefix, easier to identify variable
+//$_POST = superglobal variable - global scope - can be accessed from anywhere
 if(isset($_POST['insert'])){
   $xml = new DomDocument("1.0","UTF-8");
   $xml->load('contacts.xml');
@@ -11,6 +18,7 @@ if(isset($_POST['insert'])){
   $company = $_POST['company'];
   $companyRole = $_POST['companyRole'];
   
+  //get and set root element
   $rootTag = $xml->getElementsByTagName("contacts")->item(0);
   
   $contactTag = $xml->createElement("contact");
@@ -59,7 +67,7 @@ if(isset($_POST['insert'])){
     <input type="text" name="companyRole">
     <br>
     <br>
-    <input type="submit" name="insert" value="Add">
+    <input type="submit" name="insert" value="Add Contact">
   </form>
   </body>
 </html>
