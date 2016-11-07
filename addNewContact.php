@@ -8,7 +8,7 @@
 //2. place/load contacts.xml in this object
 //$ = variable prefix, easier to identify variable
 //$_POST = superglobal variable - global scope - can be accessed from anywhere
-if(isset($_POST['insert'])){
+if(isset($_POST['add'])){
   $xml = new DomDocument("1.0","UTF-8");
   $xml->load('contacts.xml');
   
@@ -67,7 +67,7 @@ if(isset($_POST['insert'])){
     <input type="text" name="companyRole">
     <br>
     <br>
-    <input type="submit" name="insert" value="Add Contact">
+    <input type="submit" name="add" value="Add Contact">
   </form>
   </body>
 </html>
