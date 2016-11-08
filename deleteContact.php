@@ -1,6 +1,6 @@
 <?php
 //isset() - Determine if a variable is set and is not NULL
-//($_POST['remove']) - collect form data from form when user hits remove button
+//($_POST['remove']) - collect form data from form when user hits remove button llllllllllllllllllll
 if(isset($_POST['remove'])){
   $xml = new DomDocument("1.0","UTF-8");
   $xml->load('contacts.xml');
