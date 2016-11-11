@@ -1,27 +1,5 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-</head>
-
-<body>
-  <h1>My Business Contacts</h1>
-  <h2>Hi user123</h2>
-
-
-
-  <button id="button" onclick="getAllContacts()">View All Contacts</button>
-  <div id="allContacts"></div>
-
-
-
-
-
-  <!--function to print all contacts-->
-  <script>
-    function getAllContacts() {
+/* Function to print all contacts */
+function getAllContacts() {
 
 
       //create new XMLHttpRequest object
@@ -36,7 +14,7 @@
         //status 200 = 'ok', status 404 = 'not found'
         if (this.readyState == 4 && this.status == 200) {
           document.getElementById("allContacts").innerHTML = this.responseText; // returns data as string
-          document.getElementById("button").innerHTML = "CLOSE";
+          document.getElementById("viewCbutton").innerHTML = "CLOSE";
         }
 
       };
@@ -46,24 +24,7 @@
       getContacts.send();
 
       //temporary solution to close contacts div
-      document.getElementById("button").onclick = function closeContacts() {
+      document.getElementById("viewCbutton").onclick = function closeContacts() {
         location.reload();
       };
-    }
-  </script>
-  
-  
-
-  <br>
-  <br>
-
-
-  <p>---------------------------------------------------------------</p>
-  <p>---------------------------------------------------------------</p>
-
-
-
-
-</body>
-
-</html>
+}

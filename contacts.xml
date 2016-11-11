@@ -2,7 +2,7 @@
 <contacts>
 
 <contact>
-<name>John Smith</name>
+<name>John</name>
 <email>johnSmith@gmail.com</email>
 <phoneNum>0854512282</phoneNum>
 <company>ABC Finance</company>
@@ -10,7 +10,7 @@
 </contact>
 
 <contact>
-<name>Paul Jones</name>
+<name>Conor Jones</name>
 <email>paulJones@gmail.com</email>
 <phoneNum>0871514211</phoneNum>
 <company>XYZ Ltd</company>
@@ -34,4 +34,4 @@
   <companyRole>Software Engineer</companyRole>
 </contact>
 
-</contacts>
+<contact><name>john joe</name><email>jkv3@gmail.com</email><phoneNum>08542343</phoneNum><company>tr</company><companyRole>hr</companyRole></contact></contacts>
