@@ -45,7 +45,7 @@ if(isset($_POST['add'])){
 <html>
   <body>
     <!-- Add new contact-->
-  <h3 id="addNew">Add New Contact</h3>
+  <h3 class="actionBtn">Add New Contact</h3>
   
   
   

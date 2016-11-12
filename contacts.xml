@@ -2,11 +2,11 @@
 <contacts>
 
 <contact>
-<name>Johnner Smith</name>
-<email></email>
-<phoneNum></phoneNum>
-<company></company>
-<companyRole></companyRole>
+<name>Joseph Smith</name>
+<email>johnno@gmail.com</email>
+<phoneNum>0851355470</phoneNum>
+<company>Dell</company>
+<companyRole>System Administrator</companyRole>
 </contact>
 
 <contact>
@@ -34,4 +34,4 @@
   <companyRole>Software Engineer</companyRole>
 </contact>
 
-</contacts>
+<contact><name>Georgie Porgie</name><email>gg@gmail.com</email><phoneNum>0875875985</phoneNum><company>Blah Blah</company><companyRole>CEO</companyRole></contact></contacts>

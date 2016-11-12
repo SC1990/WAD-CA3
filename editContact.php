@@ -28,7 +28,7 @@ if(isset($_POST['rename'])){
     }
     
     if(!empty($newPhoneNum)){
-      $node->phoneNum = $newPhoneNum;l;
+      $node->phoneNum = $newPhoneNum;
     }
     
     if(!empty($newCompany)){
@@ -54,8 +54,8 @@ if(isset($_POST['rename'])){
 
 <html>
   <body>
-    <!-- Add new contact-->
-  <h3 id="edit">Edit Contact</h3>
+   
+  <h3 class="actionBtn">Edit Contact</h3>
   
   
   

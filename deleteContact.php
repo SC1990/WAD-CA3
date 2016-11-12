@@ -43,8 +43,8 @@ if(isset($_POST['remove'])){
 
 <html>
   <body>
-    <!-- Add new contact-->
-  <h3 id="addNew">Delete Contact</h3>
+    
+  <h3 class="actionBtn">Delete Contact</h3>
   
   
   
