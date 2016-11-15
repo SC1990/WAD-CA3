@@ -1,7 +1,7 @@
 <?php
 
 //load xml file
-$xml=simplexml_load_file("contacts.xml") or die("Error: Cannot create object");
+$xml=simplexml_load_file("contacts.xml");
 
 
 //print each child element of contacts

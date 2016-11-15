@@ -1,8 +1,7 @@
- - implement functionality for editing a contact - stu
  - when closing contacts div, implement ajax function so only that portion of the page updates.
    Currently the whole page refreshes.
- - style
- - live search for view contact, and delete, edit 
+ - style/layout
+ 
  
  extras/bonus features:
   - create login system
