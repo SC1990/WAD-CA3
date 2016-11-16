@@ -1,7 +1,7 @@
  - when closing contacts div, implement ajax function so only that portion of the page updates.
    Currently the whole page refreshes.
  - style/layout
- 
+ - FAQ Page (JSON) - Josh 
  
  extras/bonus features:
   - create login system
