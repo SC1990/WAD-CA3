@@ -1,16 +1,14 @@
+function closeBtn(button) {
+  document.getElementById(button).onclick = function closeContacts() {
+    location.reload();
+  };
+}
+
 function addContact() {
-
-
-  //create new XMLHttpRequest object
-  //with this - can update parts of web page without reloading whole page
-  //requests data from server
   var getContacts = new XMLHttpRequest();
 
-  //stores function to be called when readyState status changes
   getContacts.onreadystatechange = function() {
-    //readyState holds status of XMLHttpRequest object
-    //4 = request finished and response is ready
-    //status 200 = 'ok', status 404 = 'not found'
+
     if (this.readyState == 4 && this.status == 200) {
       document.getElementById("addContact").innerHTML = this.responseText; // returns data as string
       document.getElementById("addCbutton").innerHTML = "CLOSE";
@@ -22,12 +20,7 @@ function addContact() {
   getContacts.open("GET", "addNewContact.php");
   getContacts.send();
 
-
-
-  //temporary solution to close contacts div
-  document.getElementById("addCbutton").onclick = function closeContacts() {
-    location.reload();
-  };
+  closeBtn(addCbutton);
 
 }
 
@@ -37,8 +30,7 @@ function showContactSuggestion(userInput) {
   if (userInput.length === 0) {
     document.getElementById("suggestion").innerHTML = "";
     return;
-  } 
-  else {
+  } else {
     var getContacts = new XMLHttpRequest();
 
     getContacts.onreadystatechange = function() {
@@ -55,8 +47,8 @@ function showContactSuggestion(userInput) {
 }
 
 function showSearchBox() {
-    searchBox = document.getElementById("searchBox");
-    searchBox.style.display = "block";
+  searchBox = document.getElementById("searchBox");
+  searchBox.style.display = "block";
 }
 
 
