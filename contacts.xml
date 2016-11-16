@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <contacts>
 
-<contact>
-<name>Joseph Smith</name>
-<email>johnno@gmail.com</email>
-<phoneNum>0851355470</phoneNum>
-<company>Dell</company>
-<companyRole>System Administrator</companyRole>
-</contact>
-
-<contact>
-<name>Conor Bones</name>
-<email>CJ@gmail.com</email>
-<phoneNum>0871514211</phoneNum>
-<company>XYZ Ltd</company>
-<companyRole>Accountant</companyRole>
-</contact>
 
 
 
@@ -23,4 +8,7 @@
 
 
 
-<contact><name>Georgie Porgie</name><email>gg@gmail.com</email><phoneNum>0875875985</phoneNum><company>Blah Blah</company><companyRole>CEO</companyRole></contact><contact><name>Peter Womack</name><email>pedro@gmail.com</email><phoneNum>0851235841</phoneNum><company>Pizza Hut</company><companyRole>x</companyRole></contact></contacts>
+
+
+
+<contact><name>Georgie Porgie</name><email>gg@gmail.com</email><phoneNum>0875875985</phoneNum><company>Blah Blah</company><companyRole>CEO</companyRole></contact><contact><name>Peter Womack</name><email>pedro@gmail.com</email><phoneNum>0851235841</phoneNum><company>Pizza Hut</company><companyRole>x</companyRole></contact><contact><name>John West</name><email>westie@gmail.com</email><phoneNum>0854578852</phoneNum><company>Intel</company><companyRole>Project Manager</companyRole></contact></contacts>
