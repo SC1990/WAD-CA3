@@ -5,3 +5,163 @@ h1 {
 #searchBox {
   display: none;
 }
+
+.navbar {
+    margin-bottom: 0px;
+    background-color: #2d2d30;
+    border: 0;
+    font-size: 11px ;
+    letter-spacing: 4px;
+    opacity:0.9;
+}
+
+
+.navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 t;
+}
+
+.navbar-brand{
+color:	#d5d5d5 t;
+}
+
+.navbar-nav li a:hover {
+    color: #fff;
+}
+
+
+.navbar-nav li.active a {
+    color: #fff ;
+    background-color:#29292c ;
+}
+
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-toggle
+{
+background-color:white;
+}
+
+.alt3{
+background-image:url('Images/footer.png');
+background-attachment:fixed;
+min-height:120px;
+color:white;
+text-align:center;
+margin-top:0px;
+padding-top:30px;
+  
+}
+
+/*Buttons*/
+
+#editCbutton{
+  background-color: white;
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    border: 2px solid red;
+}
+
+#editCbutton:hover{
+  background-color: red;
+    color: white;
+}
+
+#addCbutton{
+  background-color: white;
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    border: 2px solid red;
+}
+
+#addCbutton:hover{
+  background-color: red;
+    color: white;
+}
+
+#deleteCbutton{
+  background-color: white;
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    border: 2px solid red;
+}
+
+#deleteCbutton:hover{
+  background-color: red;
+    color: white;
+}
+
+#viewCbutton{
+  background-color: white;
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    border: 2px solid red;
+}
+
+#viewCbutton:hover{
+  background-color: red;
+    color: white;
+}
+
+#search{
+  background-color: white;
+  -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    border: 2px solid red;
+}
+
+#search:hover{
+  background-color: red;
+    color: white;
+}
+
+#top{
+ background-attachment:fixed;
+min-height:100px;
+color:black;
+text-align:center;
+margin-top:0px;
+padding-top:0px
+}
