@@ -189,6 +189,9 @@ function fetchContacts(divID, actionBtn, phpFile) {
     location.reload();
   };
 
-/*develop functions to store faq data in JSON*/
+}//end of fetchContacts function
 
-}
+/*
+develop functions to store faq data in JSON
+*/
+
