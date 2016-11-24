@@ -13,3 +13,4 @@ foreach($xml->children() as $contacts) {
   echo "Role: " . $contacts->companyRole . "<br> <br>";
 }
 ?>
+

@@ -36,7 +36,7 @@ if($suggestion === ""){
 else{
   echo $suggestion;
 }
-//
+
 
 ?>
 

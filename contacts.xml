@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <contacts>
 
-<contact>
-<name>Joseph Smith</name>
-<email>johnno@gmail.com</email>
-<phoneNum>0851355470</phoneNum>
-<company>Dell</company>
-<companyRole>System Administrator</companyRole>
-</contact>
-
-<contact>
-<name>Conor Bones</name>
-<email>CJ@gmail.com</email>
-<phoneNum>0871514211</phoneNum>
-<company>XYZ Ltd</company>
-<companyRole>Accountant</companyRole>
-</contact>
 
 
 
@@ -23,4 +8,7 @@
 
 
 
-<contact><name>Georgie Porgie</name><email>gg@gmail.com</email><phoneNum>0875875985</phoneNum><company>Blah Blah</company><companyRole>CEO</companyRole></contact><contact><name>Peter Womack</name><email>pedro@gmail.com</email><phoneNum>0851235841</phoneNum><company>Pizza Hut</company><companyRole>x</companyRole></contact></contacts>
+
+
+
+<contact><name>John West</name><email>westie@gmail.com</email><phoneNum>0854578852</phoneNum><company>Intel</company><companyRole>Project Manager</companyRole></contact><contact><name>Paul J Simon</name><email>psimon@gmail.com</email><phoneNum>087584571</phoneNum><company>Simon Industries</company><companyRole>CEO</companyRole></contact><contact><name>Stephen Doyle</name><email>doyle@gmail.com</email><phoneNum>086210021</phoneNum><company>Dell</company><companyRole>Software developer</companyRole></contact><contact><name>James Black</name><email>blac@gmail.com</email><phoneNum>0851240254</phoneNum><company>IBM</company><companyRole>Technical engineer</companyRole></contact><contact><name>Robert White</name><email>whitey@gmail.com</email><phoneNum>0854578587</phoneNum><company>Apple</company><companyRole>CEO</companyRole></contact><contact><name>Alan Davies</name><email>davies@gmail.com</email><phoneNum>4557851</phoneNum><company>Toshiba</company><companyRole>Financial director</companyRole></contact></contacts>

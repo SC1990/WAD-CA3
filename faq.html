@@ -1,3 +1,10 @@
+<!-- set to 1.5 seconds using JS -->
+<p id="introMsg">
+  Welcome user123 to your personal contact book
+</p>
+
+
+
 <!DOCTYPE html>
 <html>
 
@@ -10,7 +17,6 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="contactFunctions.js"></script>
-  <script src = "faqFunctions.js"></script>
 
 
 
@@ -34,7 +40,7 @@
         <a class="navbar-brand" href="index.html">My Business Contacts</a>
       </div>
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-right hhjhgg">
+        <ul class="nav navbar-nav navbar-right">
           <li>
             <a href="index.html">Home</a>
           </li>
@@ -63,49 +69,17 @@
   <div class="container">
 
 
-    <div class="row phaz">
+    <div class="row">
       <div id="#top">
       </div>
       <div class="col-lg-12">
         <br>
         <h1 class="page-header">FAQ</h1>
-        <h2>Ask Public Questions<br>Get Private Answers</h2>
+        <h2>Ask and answer anything</h2>
         <hr>
       </div>
 
     </div>
-    
-    <div class="row">
-      <div class="col-lg-12">
-        <form id="faqform" action="faqpost.php" method="post">
-    <ul>
-        <li>
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="nameff" />
-        </li>
-      <!--
-              Label for username when login system is created
-      -->
-      
-      
-        <li>
-            <label for="email">Email:</label>
-            <input type="text" name="email" id="emailff"/>
-        </li>
-        <li>
-            <label for="comments">Comments:</label>
-            <textarea name="comments" id="commentsff" cols="25" rows="3"></textarea>
-        </li>
-      <br>
-        <li>
-            <input type="submit" value="Submit Comment" />
-            <input type="reset" value="reset" />
-        </li>
-    </ul>
-</form>
-      </div>
-    </div>
-  </div>
 
 
   
