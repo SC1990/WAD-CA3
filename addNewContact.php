@@ -38,6 +38,9 @@ if(isset($_POST['add'])){
   $rootTag->appendChild($contactTag);
   
   $xml->save('contacts.xml');
+  
+  header('Location: index.html');
+  exit;
 }
 
 ?>
@@ -45,7 +48,7 @@ if(isset($_POST['add'])){
 <html>
   <body>
     <!-- Add new contact-->
-  <h3 class="actionBtn">Add New Contact</h3>
+  <h1>Add New Contact</h1>
   
   
   

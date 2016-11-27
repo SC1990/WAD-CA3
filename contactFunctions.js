@@ -11,6 +11,8 @@ function showSearchBox() {
   closeBtn("searchBtn");
 }
 
+
+
 function showContactSuggestion(userInput) {
   //if input field is empty
   if (userInput.length === 0) {
@@ -78,7 +80,7 @@ function fetchContacts(divID, phpFile) {
   
     if (this.readyState == 4 && this.status == 200) {
       document.getElementById(divID).innerHTML = this.responseText; // returns data as string
-      document.getElementById(actionBtn).innerHTML = "CLOSE";
+      //document.getElementById(actionBtn).innerHTML = "CLOSE";
     }
 
   };
@@ -91,3 +93,40 @@ function fetchContacts(divID, phpFile) {
 
 
 }
+
+/*
+function createContactsTable(xml) {
+  var xmlDoc = xml.responseXML;
+  var table = "<tr><th>Name</th><th>Email</th></tr>";
+  var x = xmlDoc.getElementsByTagName("contact");
+  for (var i = 0; i < x.length; i++) {
+    table += "<tr><td>" +
+      x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
+      "</td><td>" + "<br>" +
+      x[i].getElementsByTagName("email")[0].childNodes[0].nodeValue +
+      "</td></tr>";
+  }
+  document.getElementById("allContacts").innerHTML = table;
+}
+
+
+function getAllContacts() {
+
+  var getContacts = new XMLHttpRequest();
+
+  //stores function to be called when readyState status changes
+  getContacts.onreadystatechange = function() {
+
+    if (this.readyState == 4 && this.status == 200) {
+      createContactsTable(this);
+    }
+
+  };
+
+
+
+  getContacts.open("GET", "contacts.xml");
+  getContacts.send();
+  closeBtn("viewCbutton");
+}
+*/

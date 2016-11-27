@@ -36,25 +36,26 @@ if(isset($_POST['remove'])){
   
   $xml->save('contacts.xml');
   
+  header('Location: index.html');
+  exit;
+  
 }
 
 
 ?>
 
-<html>
+  <html>
+
   <body>
-    
-  <h3 class="actionBtn">Delete Contact</h3>
-  
-  
-  
-  <!--contact form-->
-  <form action="deleteContact.php" method="POST" >
-    Name:<br>
-    <input type="text" name="name">
-    <br>
-    <br>
-    <input type="submit" name="remove" value="Remove">
-  </form>
+    <h1 class="actionBtn">Delete Contact</h1>
+
+    <form action="deleteContact.php" method="POST">
+      Name:<br>
+      <input type="text" name="name">
+      <br>
+      <br>
+      <input type="submit" name="remove" value="Remove">
+    </form>
   </body>
-</html>
+
+  </html>

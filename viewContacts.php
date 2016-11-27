@@ -4,13 +4,34 @@
 $xml=simplexml_load_file("contacts.xml");
 
 
-//print each child element of contacts
-foreach($xml->children() as $contacts) { 
-  echo "<br>" . "Name: " . $contacts->name . "<br>";
-  echo "Email: " . $contacts->email . "<br>";
-  echo "Phone Number: " . $contacts->phoneNum . "<br>";
-  echo "Company: " . $contacts->company . "<br>";
-  echo "Role: " . $contacts->companyRole . "<br> <br>";
+
+echo "
+
+<table border=1>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Telephone</th>
+    <th>Company</th>
+    <th>Role</th>
+  </tr>"
+;
+
+foreach($xml->contact as $contact){
+  echo "<tr>";
+  echo "<td>{$contact->name}</td>";
+  echo "<td>{$contact->email}</td>";
+  echo "<td>{$contact->phoneNum}</td>";
+  echo "<td>{$contact->company}</td>";
+  echo "<td>{$contact->companyRole}</td>";
+  echo "<br />";
+  echo "</tr>";
 }
+echo '</table>';
+
+
+
+
+
 ?>
 

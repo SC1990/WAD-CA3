@@ -46,6 +46,9 @@ if(isset($_POST['rename'])){
   //save data to contacts.xml
   file_put_contents("contacts.xml", $xml->asXML());
   
+  header('Location: index.html');
+  exit;
+  
   
 }
 
@@ -55,7 +58,7 @@ if(isset($_POST['rename'])){
 <html>
   <body>
    
-  <h3 class="actionBtn">Edit Contact</h3>
+  <h1>Edit Contact</h1>
   
   
   
