@@ -1,4 +1,0 @@
-HOW TO PULL FROM GITHUB: 
-https://help.github.com/articles/cloning-a-repository/
-
-
