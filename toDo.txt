@@ -6,3 +6,7 @@
  extras/bonus features:
   - create login system
   - option to add contact pic
+  
+  - XSL 
+  - ensure code is cleanest  (and object oriented)
+  
