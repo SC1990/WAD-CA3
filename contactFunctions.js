@@ -1,14 +1,13 @@
-function closeBtn(button) {
-  document.getElementById(button).innerHTML = "CLOSE";
-  document.getElementById(button).onclick = function closeContacts() {
-    location.reload();
-  };
-}
-
-function showSearchBox() {
-  searchBox = document.getElementById("searchBox");
-  searchBox.style.display = "block";
-  closeBtn("searchBtn");
+function hideOrShowSearchBox() {
+  if (document.getElementById("searchBtn").innerHTML == "Search Contacts") {
+    document.getElementById("searchBtn").innerHTML = "CLOSE";
+    searchBox = document.getElementById("searchBox");
+    searchBox.style.display = "block";
+  } else if (document.getElementById("searchBtn").innerHTML == "CLOSE") {
+    document.getElementById("searchBtn").innerHTML = "Search Contacts"
+    searchBox = document.getElementById("searchBox");
+    searchBox.style.display = "none";
+  }
 }
 
 
@@ -18,8 +17,7 @@ function showContactSuggestion(userInput) {
   if (userInput.length === 0) {
     document.getElementById("suggestion").innerHTML = "";
     return;
-  } 
-  else {
+  } else {
     var getContacts = new XMLHttpRequest();
 
     getContacts.onreadystatechange = function() {
@@ -33,7 +31,7 @@ function showContactSuggestion(userInput) {
     getContacts.open("GET", "contactSearch.php?query=" + userInput, true);
     getContacts.send();
   }
-  
+
 }
 
 
@@ -41,15 +39,35 @@ function showContactSuggestion(userInput) {
 function addContact() {
 
   fetchContacts("addContact", "addNewContact");
-  closeBtn("addCbutton");
+  
+  if (document.getElementById("addCbutton").innerHTML == "Add Contact") {
+    document.getElementById("addCbutton").innerHTML = "CLOSE";
+    div = document.getElementById("addContact");
+    div.style.display = "block";
+  } 
+  else if (document.getElementById("addCbutton").innerHTML == "CLOSE") {
+    document.getElementById("addCbutton").innerHTML = "Add Contact"
+    div = document.getElementById("addContact");
+    div.style.display = "none";
+  }
 
 }
 
 
 function editContact() {
-  
+
   fetchContacts("editContact", "editContact");
-  closeBtn("editCbutton");
+    
+  if (document.getElementById("editCbutton").innerHTML == "Edit Contact") {
+    document.getElementById("editCbutton").innerHTML = "CLOSE";
+    div = document.getElementById("editContact");
+    div.style.display = "block";
+  } 
+  else if (document.getElementById("editCbutton").innerHTML == "CLOSE") {
+    document.getElementById("editCbutton").innerHTML = "Edit Contact"
+    div = document.getElementById("editContact");
+    div.style.display = "none";
+  }
 
 }
 
@@ -57,14 +75,34 @@ function editContact() {
 function getAllContacts() {
 
   fetchContacts("allContacts", "viewContacts");
-  closeBtn("viewCbutton");
+  
+  if (document.getElementById("viewCbutton").innerHTML == "View All Contacts") {
+    document.getElementById("viewCbutton").innerHTML = "CLOSE";
+    div = document.getElementById("allContacts");
+    div.style.display = "block";
+  } 
+  else if (document.getElementById("viewCbutton").innerHTML == "CLOSE") {
+    document.getElementById("viewCbutton").innerHTML = "View All Contacts"
+    div = document.getElementById("allContacts");
+    div.style.display = "none";
+  }
 }
 
 
 function deleteContact() {
-  
+
   fetchContacts("deleteContactDiv", "deleteContact");
-  closeBtn("deleteCbutton");
+  
+  if (document.getElementById("deleteCbutton").innerHTML == "Delete Contact") {
+    document.getElementById("deleteCbutton").innerHTML = "CLOSE";
+    div = document.getElementById("deleteContactDiv");
+    div.style.display = "block";
+  } 
+  else if (document.getElementById("deleteCbutton").innerHTML == "CLOSE") {
+    document.getElementById("deleteCbutton").innerHTML = "Delete Contact"
+    div = document.getElementById("deleteContactDiv");
+    div.style.display = "none";
+  }
 
 }
 
@@ -77,10 +115,10 @@ function fetchContacts(divID, phpFile) {
 
   //stores function to be called when readyState status changes
   getContacts.onreadystatechange = function() {
-  
+
     if (this.readyState == 4 && this.status == 200) {
       document.getElementById(divID).innerHTML = this.responseText; // returns data as string
-      //document.getElementById(actionBtn).innerHTML = "CLOSE";
+
     }
 
   };
@@ -93,40 +131,3 @@ function fetchContacts(divID, phpFile) {
 
 
 }
-
-/*
-function createContactsTable(xml) {
-  var xmlDoc = xml.responseXML;
-  var table = "<tr><th>Name</th><th>Email</th></tr>";
-  var x = xmlDoc.getElementsByTagName("contact");
-  for (var i = 0; i < x.length; i++) {
-    table += "<tr><td>" +
-      x[i].getElementsByTagName("name")[0].childNodes[0].nodeValue +
-      "</td><td>" + "<br>" +
-      x[i].getElementsByTagName("email")[0].childNodes[0].nodeValue +
-      "</td></tr>";
-  }
-  document.getElementById("allContacts").innerHTML = table;
-}
-
-
-function getAllContacts() {
-
-  var getContacts = new XMLHttpRequest();
-
-  //stores function to be called when readyState status changes
-  getContacts.onreadystatechange = function() {
-
-    if (this.readyState == 4 && this.status == 200) {
-      createContactsTable(this);
-    }
-
-  };
-
-
-
-  getContacts.open("GET", "contacts.xml");
-  getContacts.send();
-  closeBtn("viewCbutton");
-}
-*/

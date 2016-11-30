@@ -4,7 +4,6 @@ body {
 
 #searchBox {
 	display: none;
-	
 }
 
 .actionDivs {
@@ -14,17 +13,12 @@ body {
 	left: 600px;
 }
 
-#allContacts{
+#allContacts {
 	position: fixed;
-	bottom: 500px;
+	top: -300px;
 	right: 100px;
 	left: 600px;
 }
-
-
-
-
-
 
 .navbar-custom {
 	background-color: #ff0e0e;

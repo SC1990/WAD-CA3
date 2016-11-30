@@ -7,7 +7,7 @@ $xml=simplexml_load_file("contacts.xml");
 
 echo "
 
-<table border=1>
+<table border=5>
   <tr>
     <th>Name</th>
     <th>Email</th>
