@@ -4,8 +4,13 @@
       "name" : "gary",
       "email" : "gary@hotmail.com",
       "comments" : "hate this site but i love this site"
+    },
+    {
+      "name" : "john kavanagh"
+      "email" : "johnk4362ff@gmail.com",
+      "comments" : "i saved my contacts"
     }
   ]
 }
 
-/*append to json in other file*/
+/*append to json in php file*/
