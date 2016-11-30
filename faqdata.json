@@ -1,5 +1,4 @@
-{
-  "FAQ Data" : [
+[
     {
       "name" : "gary",
       "email" : "gary@hotmail.com",
@@ -10,7 +9,4 @@
       "email" : "johnk4362ff@gmail.com",
       "comments" : "i saved my contacts"
     }
-  ]
-}
-
-/*append to json in php file*/
+]

@@ -2,20 +2,32 @@
 $message = '';
 $error = '';
 if(isset($_POST["submit"])){
-	if(empty ($_POST["name"])){
+	if(empty($_POST["name"])){
 		$error = "<label class='text-danger'>Enter Name</label>";
 	}
-	else if (empty ($_POST["email"])){
+	else if(empty($_POST["email"])){
 		$error = "<label class='text-danger'>Enter Email</label>";
 	}
-	else if (empty($_POST["comments"])){
+	else if(empty($_POST["comments"])){
 		$error = "<label class='text-danger'>Enter Comment</label>";
 	}
 	else{
 		if(file_exists('faqdata.json')){
 			$current_data = file_get_contents('faqdata.json');
-			$array_data = json_decode($current_data, true);
 			
+			$array_data = json_decode($current_data, true);
+			$extra = array(
+				'name' => $_POST["name"],
+				'email' => $_POST["email"],
+				'comments' => $_POST["comments"]
+			);
+			$array_data[] = $extra;
+			$final_data = json_encode($array_data);
+			
+			if(file_put_contents('faqdata.json', $final_data)){
+				$message = "<label class='text-success'>Comment added successfully</label>";
+				
+			}
 		}
 		else{
 			$error='JSON file does not exist';
@@ -86,30 +98,40 @@ if(isset($_POST["submit"])){
     
     <div class="row">
       <div class="col-lg-12">
-        <form id="faqform" action="faqpost.php" method="post">
-    <ul>
-        <li>
-            <label for="name">Name:</label>
-            <input type="text" name="name" class="form-control" />
-        </li>
+        <form method="post">
+					<?php
+					if(isset($error)){
+						echo $error;
+					}
+					?>
+    
+        
+            <label>Name</label>
+            <input type="text" name="name" class="form-control" /><br>
+        
       <!--
               Label for username when login system is created
       -->
       
       
-        <li>
-            <label for="email">Email:</label>
-            <input type="email" name="email" class="form-control"/>
-        </li>
-        <li>
-            <label for="comments">Comments:</label>	<!-- Maybe delete cols  and rows if wont append -->
-            <textarea name="comments" class="form-control" cols="25" rows="3"></textarea>
-        </li>
+        
+            <label>Email</label>
+            <input type="text" name="email" class="form-control"/><br>
+        
+        
+            <label>Comments</label>	
+            <input type="text" name="comments" class="form-control"/>
+        
       <br>
-        <li>
-            <input type="submit" value="Submit Comment" />
-            <input type="reset" value="reset" />
-        </li>
+        
+            <input name="submit" type="submit" value="Submit Comment"/>
+            <!-- Reset button was here -->
+					<?php
+					if(isset($message)){
+						echo $message;
+					}
+					?>
+        
     </ul>
 </form>
       </div>
@@ -147,8 +169,9 @@ if(isset($_POST["submit"])){
 	
 	</div>
 </footer>
-  
+  <!--
   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	-->
   <script>          /* Smooth Scrolling JQuery*/
 	
 	$(function() {
