@@ -1,5 +1,13 @@
 body {
 	padding-bottom: 110px;
+	background-image: url('Images/whitewallhash.png');
+	background-attachment: fixed;
+}
+
+
+
+td{
+	padding:5px;
 }
 
 #searchBox {
