@@ -1,13 +1,19 @@
 body {
 	padding-bottom: 110px;
-	background-image: url('Images/whitewallhash.png');
+	background-image: url('Images/gplaypattern.png');
 	background-attachment: fixed;
 }
 
-
+tr{
+	padding:5px;
+	background-color:white;
+	height:20px;
+	
+}
 
 td{
 	padding:5px;
+	background-color:white;
 }
 
 #searchBox {
