@@ -1,23 +1,46 @@
+#suggestionLabel {
+	font-style: italic;
+	color: black;
+	font-weight: bolder;
+}
+
 body {
 	padding-bottom: 110px;
 	background-image: url('Images/gplaypattern.png');
 	background-attachment: fixed;
 }
 
-tr{
-	padding:5px;
-	background-color:white;
-	height:20px;
-	
+table {
+	width: 100%;
+	border-color: #f4511e;
 }
 
-td{
-	padding:5px;
-	background-color:white;
+th {
+	text-align: center;
+	background-color: #f4511e;
+}
+
+tr {
+	padding: 5px;
+	background-color: white;
+	height: 10px;
+	border-bottom: 1px solid #ad2525;
+}
+
+td:hover {
+	background-color: #f4511e;
+}
+
+td {
+	padding: 15px;
+	background-color: white;
+	font-family: monospace;
+	font-size: 16px;
 }
 
 #searchBox {
 	display: none;
+	right: 210px;
 }
 
 .actionDivs {
@@ -28,10 +51,10 @@ td{
 }
 
 #allContacts {
-	position: fixed;
-	top: -300px;
-	right: 100px;
-	left: 600px;
+	position: absolute;
+	top: -340px;
+	left: 510px;
+	padding-bottom: 110px;
 }
 
 .navbar-custom {
@@ -69,7 +92,7 @@ td{
 .navbar-fixed-bottom {
 	background-image: url('Images/footer.png');
 	background-attachment: fixed;
-	min-height: 60px;
+	min-height: 30px;
 	color: white;
 	text-align: center;
 	padding-top: 10px;
@@ -80,7 +103,7 @@ td{
 
 footer .glyphicon {
 	font-size: 20px;
-	padding-bottom: 10px;
+	padding-bottom: 1px;
 	color: #f4511e;
 }
 
@@ -96,13 +119,13 @@ footer .glyphicon {
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
+	font-size: 20px;
 	margin: 4px 2px;
 	-webkit-transition-duration: 0.4s;
 	/* Safari */
 	transition-duration: 0.4s;
 	cursor: pointer;
-	width: 250px;
+	width: 300px;
 }
 
 .button1 {

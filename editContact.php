@@ -58,6 +58,7 @@ if(isset($_POST['rename'])){
 <html>
   <body>
    
+    
   <h1>Edit Contact</h1>
   
   

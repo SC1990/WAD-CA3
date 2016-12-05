@@ -18,9 +18,9 @@
 </head>
 
 <body>
-	
-	
-	
+
+
+
 	<nav class="navbar navbar-default custom-nav">
 		<div class="container" id="top">
 			<div class="navbar-header">
@@ -54,19 +54,19 @@
 					<br>
 					<div class="actionDivs" id="searchBox">
 						<br>
-						<h1>Search</h1>
-							
+						<h1 id = "searchHeader">Search For Contact</h1>
+
 						<form>
-							Name: <input type="text" onkeyup="showContactSuggestion(this.value)">
+							<span style="color:#f4511e; font-weight: bolder; font-size: 200% "> Name: </span><input type="text" onkeyup="showContactSuggestion(this.value)">
 							<br>
 							<br>
-							<p>Suggestions: <span id="suggestion"></span></p>
+							<p id="suggestionLabel"><span id="suggestion"></span></p>
 						</form>
 
 					</div>
 
 					<br>
-					
+
 
 					<button class="button button1" id="viewCbutton" onclick="getAllContacts()">View All Contacts</button>
 					<div class="actionDivs" id="allContacts"></div>
@@ -86,7 +86,7 @@
 					<button class="button button5" id="deleteCbutton" onclick="deleteContact()">Delete Contact</button>
 					<div class="actionDivs" id="deleteContactDiv"></div>
 
-					
+
 					<br>
 				</div>
 			</div>
@@ -140,8 +140,8 @@
 			});
 		});
 	</script>
-	
-	
+
+
 
 
 </body>
