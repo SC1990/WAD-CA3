@@ -66,7 +66,7 @@ if(isset($_POST['rename'])){
   <!--contact form-->
   <form action="editContact.php" method="POST" >
     Contact Name:<br>
-    <input type="text" name="oldName">
+    <input type="text" name="oldName" required placeholder="Enter contact name">
     <br>
     <br>
     New Name:<br>

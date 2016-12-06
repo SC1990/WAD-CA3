@@ -54,7 +54,7 @@ if(isset($_POST['remove'])){
 
     <form action="deleteContact.php" method="POST">
       <span style="color:#f4511e; font-weight: bolder; font-size: 200% ">Name:</span><br>
-      <input type="text" name="name">
+      <input type="text" name="name" required placeholder="Enter contact name">
       <br>
       <br>
       <p>WARNING : Once remove button is clicked, contact will be PERMANENTLY deleted</p>

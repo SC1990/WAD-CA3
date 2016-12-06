@@ -55,19 +55,19 @@ if(isset($_POST['add'])){
   <!--contact form-->
   <form action="addNewContact.php" method="POST" >
     Name:<br>
-    <input type="text" name="name">
+    <input type="text" name="name" required placeholder="Enter contact name">
     <br>
     Email:<br>
-    <input type="text" name="email">
+    <input type="text" name="email" placeholder="Enter email">
     <br>
     Phone Number:<br>
-    <input type="text" name="phoneNum">
+    <input type="text" name="phoneNum" placeholder="Enter phone number">
     <br>
     Company:<br>
-    <input type="text" name="company">
+    <input type="text" name="company" placeholder="Enter company name">
     <br>
     Company Role:<br>
-    <input type="text" name="companyRole">
+    <input type="text" name="companyRole" placeholder="Enter job title">
     <br>
     <br>
     <input type="submit" name="add" value="Add Contact">
