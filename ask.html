@@ -57,15 +57,10 @@
     
     <div class="row askform">
       <div class="col-lg-12">
-        <form method="post">
-					<?php
-					if(isset($error)){
-						echo $error;
-					}
-					?>
+        <form method="post" class = "askfont askajax" action="ask.php">
     
         
-            <label>Name</label>
+            <label class ="asklbl">Name</label>
             <input type="text" name="name" class="form-control" /><br>
         
       <!--
@@ -78,21 +73,16 @@
             <input type="text" name="email" class="form-control"/><br>
         
         
-            <label>Comments</label>	
-            <input type="text" name="comments" class="form-control"/>
+            <label>Question</label>	
+            <textarea name="question" class="form-control"></textarea>
         
       <br>
         
-            <input name="submit" type="submit" value="Submit Comment"/>
-            <!-- Reset button was here -->
-					<?php
-					if(isset($message)){
-						echo $message;
-					}
-					?>
+            <input type="submit" value="Submit Question"/>
+
         
     </ul>
-</form>
+      </form>
       </div>
     </div>
   </div>
@@ -131,9 +121,11 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
 	</script>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="contactFunctions.js"></script>
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="ask.js"></script>>
+<!--
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script>          /* Smooth Scrolling JQuery*/
 	
 	$(function() {
@@ -151,7 +143,7 @@
   });
 });
 	</script>
-
+-->
 </body>
 
 </html>
