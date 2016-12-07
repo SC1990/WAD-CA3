@@ -46,7 +46,7 @@ if(isset($_POST['rename'])){
   //save data to contacts.xml
   file_put_contents("contacts.xml", $xml->asXML());
   
-  header('Location: index.html');
+  header('Location: index.php');
   exit;
   
   

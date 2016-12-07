@@ -22,6 +22,15 @@ $('form.askajax').on('submit', function() {
       console.log(response);
     }
   });
-  
+  /*
+  nameEm = document.getElementById("nameid");
+emailEm = document.getElementById("emailid");
+qEm = document.getElementById("questionid");
+
+if(nameEm==""||emailEm==null||qEm==null){
   return false;
+  
+}
+*/
 });
+

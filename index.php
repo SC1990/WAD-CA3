@@ -10,7 +10,6 @@
 	
 
 
-
 </head>
 
 <body>
@@ -25,14 +24,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span> 
       </button>
-				<a class="navbar-brand" href="index.html">MY BUSINESS CONTACTS</a>
+				<a class="navbar-brand" href="index.php">MY BUSINESS CONTACTS</a>
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index.html">HOME</a></li>
-        <li><a href="ask.html">ASK</a></li>
-        <li><a href="faq.php">FAQ</a></li>
-        <li><a href="contact-us.html">CONTACT</a></li>
+					<li><a href="index.php">HOME</a></li>
+        	<li><a href="faq.php">FAQ</a></li>
+        	<li><a href="contact.php">CONTACT</a></li>
+					<li><a href="signup.php">SIGN UP</a></li>
 				</ul>
 			</div>
 		</div>
@@ -109,7 +108,7 @@
 			</a>
 
 			<p class="copy">
-				<center>Copyright &copy; Business Contacts 2016</center>
+				<center>Copyright &copy; My Business Contacts 2016</center>
 			</p>
 
 		</div>
@@ -123,25 +122,12 @@
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="contactFunctions.js"></script>
+	
+	<!--Smooth Scrolling JQuery*/
+				MUST KEEP LINK BELOW IN FOR SMOOTH SCROLLING
+-->
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script>
-		/* Smooth Scrolling JQuery*/
-
-		$(function() {
-			$('a[href*=#]:not([href=#])').click(function() {
-				if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-					var target = $(this.hash);
-					target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-					if (target.length) {
-						$('html,body').animate({
-							scrollTop: target.offset().top
-						}, 1000);
-						return false;
-					}
-				}
-			});
-		});
-	</script>
+	<script src="scrolling.js"></script>
 
 
 

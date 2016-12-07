@@ -36,7 +36,7 @@ if(isset($_POST['remove'])){
   
   $xml->save('contacts.xml');
   
-  header('Location: index.html');
+  header('Location: index.php');
   exit;
   
 }

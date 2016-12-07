@@ -130,4 +130,3 @@ function fetchContacts(divID, phpFile) {
   ob = document.getElementById("deleteContactDiv");
     ob.style.display = "none";
   }
-  
