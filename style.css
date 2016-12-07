@@ -184,12 +184,14 @@ footer .glyphicon {
 	color: white;
 }
 
-.row {
-	margin-bottom: 0;
-	margin-top: 0;
-}
+
 
 .phaz {
 	text-align: center;
 	color: #6f932c;
+}
+
+.askform{
+	margin: 0 auto;
+	width:50%;
 }
