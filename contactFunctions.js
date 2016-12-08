@@ -1,10 +1,16 @@
+function clearSearch() {
+  document.getElementById("suggestion").innerHTML = "";
+  var form = document.getElementById("searchBar");
+  form.reset();
+}
+
 function searchContacts() {
- 
-    searchBox = document.getElementById("searchBox");
-    searchBox.style.display = "block";
+
+  searchBox = document.getElementById("searchBox");
+  searchBox.style.display = "block";
   //closeOpts(view);
- closeView(), closeAdd(), closeEdit(), closeDel();
-  
+  closeView(), closeAdd(), closeEdit(), closeDel();
+
 }
 
 
@@ -36,11 +42,11 @@ function showContactSuggestion(userInput) {
 function addContact() {
 
   fetchContacts("addContact", "addNewContact");
-  
-  
-    div = document.getElementById("addContact");
-    div.style.display = "block";
-  closeSearch(), closeView(), closeEdit(), closeDel();
+
+
+  div = document.getElementById("addContact");
+  div.style.display = "block";
+  closeSearch(), closeView(), closeEdit(), closeDel(), clearSearch();
 
 }
 
@@ -48,12 +54,12 @@ function addContact() {
 function editContact() {
 
   fetchContacts("editContact", "editContact");
-    
-  
-    div = document.getElementById("editContact");
-    div.style.display = "block";
-  
- closeSearch(), closeView(), closeAdd(), closeDel();
+
+
+  div = document.getElementById("editContact");
+  div.style.display = "block";
+
+  closeSearch(), closeView(), closeAdd(), closeDel(), clearSearch();
 
 }
 
@@ -61,11 +67,11 @@ function editContact() {
 function getAllContacts() {
 
   fetchContacts("allContacts", "viewContacts");
-  
-  
-    div = document.getElementById("allContacts");
-    div.style.display = "block";
-  closeSearch(), closeAdd(), closeEdit(), closeDel();
+
+
+  div = document.getElementById("allContacts");
+  div.style.display = "block";
+  closeSearch(), closeAdd(), closeEdit(), closeDel(), clearSearch();
 
 }
 
@@ -73,14 +79,14 @@ function getAllContacts() {
 function deleteContact() {
 
   fetchContacts("deleteContactDiv", "deleteContact");
-  
 
-    div = document.getElementById("deleteContactDiv");
-    div.style.display = "block";
-  closeSearch(), closeView(), closeAdd(), closeEdit();
-  
+
+  div = document.getElementById("deleteContactDiv");
+  div.style.display = "block";
+  closeSearch(), closeView(), closeAdd(), closeEdit(), clearSearch();
+
   //btn = document.getElementById("deleteCbutton");
- // btn.onclick(alert("sjkbsb"));
+  // btn.onclick(alert("sjkbsb"));
 }
 
 
@@ -112,23 +118,27 @@ function fetchContacts(divID, phpFile) {
 
 
 
-  function closeSearch(){
+function closeSearch() {
   ob = document.getElementById("searchBox");
-    ob.style.display = "none";
-  }
-  function closeView(){
-    ob = document.getElementById("allContacts");
-    ob.style.display = "none";
-  }
-  function closeAdd(){
+  ob.style.display = "none";
+}
+
+function closeView() {
+  ob = document.getElementById("allContacts");
+  ob.style.display = "none";
+}
+
+function closeAdd() {
   ob = document.getElementById("addContact");
-    ob.style.display = "none";
-  }
-  function closeEdit(){
+  ob.style.display = "none";
+}
+
+function closeEdit() {
   ob = document.getElementById("editContact");
-    ob.style.display = "none";
-  }
-  function closeDel(){
+  ob.style.display = "none";
+}
+
+function closeDel() {
   ob = document.getElementById("deleteContactDiv");
-    ob.style.display = "none";
-  }
+  ob.style.display = "none";
+}

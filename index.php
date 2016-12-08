@@ -51,8 +51,8 @@
 						<br>
 						<h1 id = "searchHeader">Search For Contact</h1>
 
-						<form>
-							<span style="color:#f4511e; font-weight: bolder; font-size: 200% "> Name: </span><input type="text" onkeyup="showContactSuggestion(this.value)">
+						<form id="searchBar">
+							<span style="color:#f4511e; font-weight: bolder; font-size: 200% "> Name: </span><input   type="text" onkeyup="showContactSuggestion(this.value)">
 							<br>
 							<br>
 							<p id="suggestionLabel"><span id="suggestion"></span></p>
