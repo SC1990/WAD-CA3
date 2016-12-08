@@ -41,11 +41,11 @@ include 'dbc.php';
   
   <div class="container-fluid">
 		<?php
-		$quest = "SELECT * FROM tabletest";
+		$quest = "SELECT * FROM test";
 		$result = $conn->query($quest);
 		$row = $result->fetch_assoc();
 		
-		echo $row['Name'];
+		echo $row['name'];
 		
 		?>
 	</div>
