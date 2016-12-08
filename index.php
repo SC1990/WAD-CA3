@@ -42,7 +42,7 @@
 
 	<div id="actionsContainer" class="container-fluid">
 		<div class="row">
-			<div class="col-md-4 text-center ">
+			<div class="col-md-3 text-center ">
 				<div class="buttons">
 
 					<button class="button button2" id="searchBtn" onclick="searchContacts()">Search Contacts</button>

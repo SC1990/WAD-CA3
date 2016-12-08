@@ -21,34 +21,12 @@ if ($query !== "") {
             //if suggestions is currently blank
             if ($suggestion === "") {
                 //assign contact name to suggestion
-              echo "
-
-               <table border=5>
-                <tr>
-                  <th>Name</th>
-                  <th>Email</th>
-                  <th>Telephone</th>
-                  <th>Company</th>
-                  <th>Role</th>
-                </tr>"
-;
-                $suggestion = "<tr> 
-                <td>{$contact->name}</td> 
-                <td>{$contact->email}</td> 
-                <td>{$contact->phoneNum}</td> 
-                <td>{$contact->company}</td>
-                <td>{$contact->companyRole}</td>
-                </tr>
-                <br><br>";
-              
+                $suggestion = "$contact->name, $contact->email, $contact->phoneNum, $contact->company, $contact->companyRole <br><br>";
             } 
             //else if suggestion is currently contains a suggestion, add this contact name alongside it
             else {
-        
                 $suggestion .= "$contact->name, $contact->email, $contact->phoneNum, $contact->company, $contact->companyRole <br><br>";
-           
             }
-        echo "</table>";
         }
   }
 }
@@ -59,5 +37,4 @@ if($suggestion === ""){
 else{
   echo $suggestion;
 }
-
 ?>

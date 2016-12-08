@@ -53,7 +53,7 @@ td {
 #allContacts {
 	position: absolute;
 	top: -340px;
-	left: 510px;
+	left: 600px;
 	padding-bottom: 110px;
 }
 
@@ -125,7 +125,7 @@ footer .glyphicon {
 	/* Safari */
 	transition-duration: 0.4s;
 	cursor: pointer;
-	width: 300px;
+	width: 230px;
 }
 
 .button1 {
