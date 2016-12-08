@@ -87,11 +87,20 @@
 			
 			
 			<div class="container-fluid">
-				<input type ="text" name="first" placeholder="First Name"><br>
-				<input type ="text" name="last" placeholder="Last Name"><br>
-				<input type ="text" name="user" placeholder="Username"><br>
-				<input type ="password" name="pass" placeholder="Password"><br>
-				<button type="submit">SIGN UP</button>
+				
+				<form method = "POST" action="login.php">
+					<input type ="text" name="user" placeholder="Username"><br>
+					<input type ="password" name="pass" placeholder="Password"><br>
+					<button type="submit">LOGIN</button>
+				</form>
+				
+				<form method = "POST" action="signup.php">
+					<input type ="text" name="first" placeholder="First Name"><br>
+					<input type ="text" name="last" placeholder="Last Name"><br>
+					<input type ="text" name="user" placeholder="Username"><br>
+					<input type ="password" name="pass" placeholder="Password"><br>
+					<button type="submit">SIGN UP</button>
+				</form>
 			</div>
 
 <!--
@@ -99,7 +108,6 @@
 				<div class="col-md-8">
 					<p> </p>
 				</div>
-
 			</div>
 		</div>
 	</div>
@@ -145,22 +153,4 @@
 
 
 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-	</script>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="contactFunctions.js"></script>
-	
-	<!--Smooth Scrolling JQuery*/
-				MUST KEEP LINK BELOW IN FOR SMOOTH SCROLLING...
-
--->
-	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="scrolling.js"></script>
-
-
-
-
-</body>
-
-</html>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWV
