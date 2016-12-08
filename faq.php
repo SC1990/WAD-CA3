@@ -1,3 +1,7 @@
+<?php
+include 'dbc.php';
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -6,11 +10,9 @@
   <title>My Business Contacts - FAQ </title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
-  
-
-
-
-
+	
+	<link rel="icon" type="image/gif" href="Images/bookicon.ico">
+	
 </head>
 
 <body>
@@ -37,9 +39,16 @@
 	</nav>
 
   
-  
-
-  
+  <div class="container-fluid">
+		<?php
+		$quest = "SELECT * FROM tabletest";
+		$result = $conn->query($quest);
+		$row = $result->fetch_assoc();
+		
+		echo $row['Name'];
+		
+		?>
+	</div>
   
  
 

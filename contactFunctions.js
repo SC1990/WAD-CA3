@@ -78,7 +78,9 @@ function deleteContact() {
     div = document.getElementById("deleteContactDiv");
     div.style.display = "block";
   closeSearch(), closeView(), closeAdd(), closeEdit();
-
+  
+  //btn = document.getElementById("deleteCbutton");
+ // btn.onclick(alert("sjkbsb"));
 }
 
 

@@ -7,7 +7,7 @@ $(function() {
 						$('html,body').animate({
 							scrollTop: target.offset().top
 						}, 1000);
-						return false;
+						return false; //ensures it scrolls to top rather than elsewhere
 					}
 				}
 			});
