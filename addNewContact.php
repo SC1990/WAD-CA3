@@ -11,7 +11,7 @@
 if(isset($_POST['add'])){
   $xml = new DomDocument("1.0","UTF-8");
   $xml->load('contacts.xml');
-  
+  //get each element
   $name = $_POST['name'];
   $email = $_POST['email'];
   $phoneNum = $_POST['phoneNum'];

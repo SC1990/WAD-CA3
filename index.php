@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-
+<!-- latest -->
 <head>
 	<title>My Business Contacts </title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -123,7 +123,8 @@
 	<script src="contactFunctions.js"></script>
 	
 	<!--Smooth Scrolling JQuery*/
-				MUST KEEP LINK BELOW IN FOR SMOOTH SCROLLING
+				MUST KEEP LINK BELOW IN FOR SMOOTH SCROLLING...
+
 -->
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="scrolling.js"></script>
