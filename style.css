@@ -200,3 +200,16 @@ footer .glyphicon {
 	text-align:center;
 }
 
+.userbox{
+	margin-top: 2.5%;
+	height:50%;
+}
+
+.password{
+	margin-top: 2.5%;
+	height:50%;
+}
+
+.formlog{
+	width: 50;
+}

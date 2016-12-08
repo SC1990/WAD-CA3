@@ -30,14 +30,13 @@
 					<li><a href="index.php">HOME</a></li>
         	<li><a href="faq.php">FAQ</a></li>
         	<li><a href="contact.php">CONTACT</a></li>
-					<li><a href="signup.php">SIGN UP</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
 
-
+	
 
 
 	<div id="actionsContainer" class="container-fluid">
@@ -85,10 +84,17 @@
 					<br>
 				</div>
 			</div>
+			
+			
+			<div class="container-fluid">
+				<input type ="text" name="first" placeholder="First Name"><br>
+				<input type ="text" name="last" placeholder="Last Name"><br>
+				<input type ="text" name="user" placeholder="Username"><br>
+				<input type ="password" name="pass" placeholder="Password"><br>
+				<button type="submit">SIGN UP</button>
+			</div>
 
-
-
-
+<!--
 			<div class="display">
 				<div class="col-md-8">
 					<p> </p>
@@ -97,7 +103,30 @@
 			</div>
 		</div>
 	</div>
-
+-->
+	
+	<!--
+	<div class="container-fluid">
+	<div class="row">
+		<div class="col-xs-12 col-md-6">
+						<h3 class="title-negative-margin">Login</h3><br>
+						<div class="title-separator-primary"></div>
+						<div class="dark-col margin-top-60">
+							<div class="row">
+								
+							
+								<div class="col-xs-12 col-sm-6 margin-top-15">
+									<input name="price" type="text" class="input-full main-input" placeholder="Price" />
+									<br><br>
+									<input name="bedrooms" type="text" class="input-full main-input" placeholder="Bedrooms" />
+								</div>
+								
+							
+						</div>				
+					</div>
+	</div>
+	</div>
+-->
 
 	<footer class="container-fluid">
 		<div class="navbar-fixed-bottom">
