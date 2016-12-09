@@ -1,3 +1,7 @@
+<?php
+include 'dbc.php';
+?>
+
 <!DOCTYPE html>
 <html>
 
@@ -93,6 +97,7 @@
  					<input type ="password" name="pass" placeholder="Password"><br>
  					<button type="submit">LOGIN</button><br><br><br>
  				</form>
+ 				
  				
  				<form method = "POST" action="signup.php">
  					<input type ="text" name="first" placeholder="First Name"><br>
