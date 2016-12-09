@@ -30,13 +30,14 @@
 					<li><a href="index.php">HOME</a></li>
         	<li><a href="faq.php">FAQ</a></li>
         	<li><a href="contact.php">CONTACT</a></li>
+					<li><a href="signup.php">SIGN UP</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
 
-	
+
 
 
 	<div id="actionsContainer" class="container-fluid">
@@ -84,57 +85,29 @@
 					<br>
 				</div>
 			</div>
-			
-			
-			<div class="container-fluid">
-				
-				<form method = "POST" action="login.php">
-					<input type ="text" name="user" placeholder="Username"><br>
-					<input type ="password" name="pass" placeholder="Password"><br>
-					<button type="submit">LOGIN</button>
-				</form>
-				
-				<form method = "POST" action="signup.php">
-					<input type ="text" name="first" placeholder="First Name"><br>
-					<input type ="text" name="last" placeholder="Last Name"><br>
-					<input type ="text" name="user" placeholder="Username"><br>
-					<input type ="password" name="pass" placeholder="Password"><br>
-					<button type="submit">SIGN UP</button>
-				</form>
-			</div>
 
-<!--
-			<div class="display">
-				<div class="col-md-8">
-					<p> </p>
-				</div>
+		<div class ="container-fluid">
+			<br><br>
+			
+		<form method = "POST" action="login.php">
+ 					<input type ="text" name="user" placeholder="Username"><br>
+ 					<input type ="password" name="pass" placeholder="Password"><br>
+ 					<button type="submit">LOGIN</button><br><br><br>
+ 				</form>
+ 				
+ 				<form method = "POST" action="signup.php">
+ 					<input type ="text" name="first" placeholder="First Name"><br>
+ 					<input type ="text" name="last" placeholder="Last Name"><br>
+ 					<input type ="text" name="user" placeholder="Username"><br>
+ 					<input type ="password" name="pass" placeholder="Password"><br>
+ 					<button type="submit">SIGN UP</button>
+ 					</form>
 			</div>
 		</div>
 	</div>
--->
 	
-	<!--
-	<div class="container-fluid">
-	<div class="row">
-		<div class="col-xs-12 col-md-6">
-						<h3 class="title-negative-margin">Login</h3><br>
-						<div class="title-separator-primary"></div>
-						<div class="dark-col margin-top-60">
-							<div class="row">
-								
-							
-								<div class="col-xs-12 col-sm-6 margin-top-15">
-									<input name="price" type="text" class="input-full main-input" placeholder="Price" />
-									<br><br>
-									<input name="bedrooms" type="text" class="input-full main-input" placeholder="Bedrooms" />
-								</div>
-								
-							
-						</div>				
-					</div>
-	</div>
-	</div>
--->
+	
+
 
 	<footer class="container-fluid">
 		<div class="navbar-fixed-bottom">
@@ -153,4 +126,22 @@
 
 
 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWV
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+	</script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="contactFunctions.js"></script>
+	
+	<!--Smooth Scrolling JQuery*/
+				MUST KEEP LINK BELOW IN FOR SMOOTH SCROLLING...
+
+-->
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="scrolling.js"></script>
+
+
+
+
+</body>
+
+</html>
