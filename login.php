@@ -13,5 +13,7 @@ if(!$row = $result->fetch_assoc()){
 else{
 	
   $_SESSION['id'] = $row['id'];
+  $_SESSION['first'] = $row['first'];
+  $loggedIn = true;
 }
 header("Location: index.php");

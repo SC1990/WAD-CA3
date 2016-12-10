@@ -34,7 +34,8 @@ include 'header.php';
 					<li><a href="index.php">HOME</a></li>
         	<li><a href="faq.php">FAQ</a></li>
         	<li><a href="contact.php">CONTACT</a></li>
-        	
+        	<li id="logoutlink"><a href="logout.php"><i><b>LOG OUT</b></i></a></li>
+        
 				</ul>
 				
 			</div>
@@ -57,7 +58,7 @@ include 'header.php';
 						<h1 id = "searchHeader">Search For Contact</h1>
 
 						<form id="searchBar">
-							<span style="color:#f4511e; font-weight: bolder; font-size: 200% "> Name: </span><input   type="text" onkeyup="showContactSuggestion(this.value)">
+							<span class="searcherkey"> Name: </span><input   type="text" onkeyup="showContactSuggestion(this.value)">
 							<br>
 							<br>
 							<p id="suggestionLabel"><span id="suggestion"></span></p>
@@ -91,38 +92,45 @@ include 'header.php';
 				</div>
 			</div>
 
-		<div class ="container-fluid">
-			<br><br>
-			
-		
- 				<br><br><br>
+	<div class = "container-fluid" id="signdivs">
+	<div class="row">
+	
 
- 				<?php
- 					if(isset($_SESSION['id'])){
- 						echo "logged in: your id is: ";
- 						echo $_SESSION['id'];
- 					}
- 					else{
- 						echo "not logged in";
- 					}
- 				?>
- 				
- 				<form method = "POST" action="logout.php">
- 					<input type ="text" name="first" placeholder="First Name"><br>
- 					<input type ="text" name="last" placeholder="Last Name"><br>
- 					<input type ="text" name="user" placeholder="Username"><br>
- 					<input type ="password" name="pass" placeholder="Password"><br>
- 					<button type="submit">SIGN UP</button>
- 				</form>
- 				<br><br>
- 				<form action="logout.php">
- 					<button>LOGOUT</button>
- 				</form>
-			</div>
-		</div>
-	</div>
-	
-	
+
+  	<div class = "col-md-3" id="signdiv">
+<div class="wrapper">
+    <form class="form-signin" method="post" action="signup.php">       
+      <h2 class="form-signin-heading">Sign Up</h2>
+      <input type="text" class="form-control" name="first" placeholder="First Name" required="" autofocus="" />
+      <input type="text" class="form-control" name="last" placeholder="Last Name" required=""/>      
+      <input type="text" class="form-control" name="user" placeholder="Username" required=""/> 
+      <input type="password" class="form-control" name="pass" placeholder="Password" required=""/> 
+      
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign Up</button>   
+    </form>
+  </div></div>
+
+
+
+  <div class = "col-md-3" id="logdiv">
+	<div class="wrapper">
+    <form class="form-signin" method="post" action="login.php">       
+      <h2 class="form-signin-heading">Log In</h2>
+      <input type="text" class="form-control" name="user" placeholder="Username" required="" autofocus="" />
+      <input type="password" class="form-control" name="pass" placeholder="Password" required=""/>      
+     
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>   
+    </form>
+
+    <?php
+    	if(isset($_SESSION['id'])){
+    		echo "Welcome back " . $_SESSION['first'] . " !";
+    	}
+    ?>
+  </div></div>
+
+
+  </div></div>
 
 
 	<footer class="container-fluid">

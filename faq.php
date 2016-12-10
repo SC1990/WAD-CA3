@@ -38,9 +38,7 @@ include 'header.php';
 	</nav>
 
   
-  <div class="container-fluid">
-		
-	</div>
+  
   
  
 

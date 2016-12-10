@@ -10,6 +10,7 @@ function searchContacts() {
   searchBox.style.display = "block";
   //closeOpts(view);
   closeView(), closeAdd(), closeEdit(), closeDel();
+  closeSign(), closeLog();
 
 }
 
@@ -47,7 +48,7 @@ function addContact() {
   div = document.getElementById("addContact");
   div.style.display = "block";
   closeSearch(), closeView(), closeEdit(), closeDel(), clearSearch();
-
+  closeSign(), closeLog();
 }
 
 
@@ -60,6 +61,7 @@ function editContact() {
   div.style.display = "block";
 
   closeSearch(), closeView(), closeAdd(), closeDel(), clearSearch();
+  closeSign(), closeLog();
 
 }
 
@@ -72,6 +74,7 @@ function getAllContacts() {
   div = document.getElementById("allContacts");
   div.style.display = "block";
   closeSearch(), closeAdd(), closeEdit(), closeDel(), clearSearch();
+  closeSign(), closeLog();
 
 }
 
@@ -83,12 +86,11 @@ function deleteContact() {
 
   div = document.getElementById("deleteContactDiv");
   div.style.display = "block";
-  closeSearch(), closeView(), closeAdd(), closeEdit(), clearSearch();
+  closeSearch(), closeView(), closeAdd(), closeEdit(), clearSearch(), closeSignDivs();
 
   //btn = document.getElementById("deleteCbutton");
   // btn.onclick(alert("sjkbsb"));
 }
-
 
 
 
@@ -140,5 +142,26 @@ function closeEdit() {
 
 function closeDel() {
   ob = document.getElementById("deleteContactDiv");
+  ob.style.display = "none";
+}
+
+/*
+function signOrLog(){
+  var sign = document.getElementById("signdiv");
+  var log = document.getElementById("logdiv");
+  var loggedIn = "<?php echo $loggedIn ?>"; 
+  if(loggedIn==true){
+    sign.style.display = "none";
+    log.style.display = "none";
+  }
+  else{
+    sign.style.display = "block";
+    log.style.display = "block";
+  }
+}
+*/
+
+function closeSignDivs() {
+  ob = document.getElementsByClassName("signdivs");
   ob.style.display = "none";
 }
