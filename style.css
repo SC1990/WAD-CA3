@@ -260,3 +260,25 @@ button{
 	font-weight: bolder; 
 	font-size: 200%;
 }
+
+.contacthead{
+	text-align: center;
+}
+
+.conff{
+	margin: 0 auto;
+	width: 65%;
+}
+
+.accforms{
+	margin: 0 auto;
+	width: 65%;
+}
+
+h2{
+	text-align: center;
+}
+
+#usernavb{
+	
+}
