@@ -1,6 +1,5 @@
 <?php
-//session_start();
-include 'dbc.php';
+include 'header.php';
 
 $first = $_POST['first'];
 $last = $_POST['last'];
@@ -8,10 +7,10 @@ $user = $_POST['user'];
 $pass = $_POST['pass'];
 
 
-$sql = "INSERT INTO accdet (first, last, uname, pname)
+$signquery = "INSERT INTO accdet (first, last, uname, pword)
 VALUES ('$first', '$last', '$user', '$pass')";
 
 
-$result = mysqli_query($conn, $sql);
-echo $result;
+$result = $conn->query($signquery);
+
 header("Location: index.php");
