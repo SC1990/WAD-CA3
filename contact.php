@@ -32,6 +32,7 @@ include 'header.php';
 					<li><a href="index.php">HOME</a></li>
         	<li><a href="faq.php">FAQ</a></li>
         	<li><a href="contact.php">CONTACT</a></li>
+        	
 				</ul>
 			</div>
 		</div>
@@ -210,7 +211,7 @@ include 'header.php';
 			</a>
 
 			<p class="copy">
-				<center>Copyright &copy; My Business Contacts 2016</center>
+				<center>This website is for demonstrational purposes only</center>
 			</p>
 
 		</div>

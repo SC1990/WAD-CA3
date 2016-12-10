@@ -200,3 +200,7 @@ footer .glyphicon {
 	text-align:center;
 }
 
+
+button{
+	cursor: pointer;
+}

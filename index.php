@@ -34,7 +34,9 @@ include 'header.php';
 					<li><a href="index.php">HOME</a></li>
         	<li><a href="faq.php">FAQ</a></li>
         	<li><a href="contact.php">CONTACT</a></li>
+        	
 				</ul>
+				
 			</div>
 		</div>
 	</nav>
@@ -92,20 +94,30 @@ include 'header.php';
 		<div class ="container-fluid">
 			<br><br>
 			
-		<form method = "POST" action="login.php">
- 					<input type ="text" name="user" placeholder="Username"><br>
- 					<input type ="password" name="pass" placeholder="Password"><br>
- 					<button type="submit">LOGIN</button><br><br><br>
- 				</form>
+		
+ 				<br><br><br>
+
+ 				<?php
+ 					if(isset($_SESSION['id'])){
+ 						echo "logged in: your id is: ";
+ 						echo $_SESSION['id'];
+ 					}
+ 					else{
+ 						echo "not logged in";
+ 					}
+ 				?>
  				
- 				
- 				<form method = "POST" action="signup.php">
+ 				<form method = "POST" action="logout.php">
  					<input type ="text" name="first" placeholder="First Name"><br>
  					<input type ="text" name="last" placeholder="Last Name"><br>
  					<input type ="text" name="user" placeholder="Username"><br>
  					<input type ="password" name="pass" placeholder="Password"><br>
  					<button type="submit">SIGN UP</button>
- 					</form>
+ 				</form>
+ 				<br><br>
+ 				<form action="logout.php">
+ 					<button>LOGOUT</button>
+ 				</form>
 			</div>
 		</div>
 	</div>
@@ -121,7 +133,7 @@ include 'header.php';
 			</a>
 
 			<p class="copy">
-				<center>Copyright &copy; My Business Contacts 2016</center>
+				<center>This website is for demonstrational purposes only</center>
 			</p>
 
 		</div>

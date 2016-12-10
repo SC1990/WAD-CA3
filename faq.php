@@ -52,7 +52,7 @@ include 'header.php';
 			</a>
 
 			<p class="copy">
-				<center>Copyright &copy; My Business Contacts 2016</center>
+				<center>This website is for demonstrational purposes only</center>
 			</p>
 
 		</div>

@@ -11,7 +11,7 @@ if(!$row = $result->fetch_assoc()){
   echo "Invalid username or password.";
 }
 else{
-	echo"logged in";
-  //$_SESSION['id'] = $row['id'];
+	
+  $_SESSION['id'] = $row['id'];
 }
-//header("Location: index.php");
+header("Location: index.php");
