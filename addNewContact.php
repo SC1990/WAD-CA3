@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 //isset() - Determine if a variable is set and is not NULL
 //($_POST['insert']) - create array with key/value pairs and collect form data from form when user hits add button
 //submit button name = 'insert'

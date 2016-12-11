@@ -184,6 +184,17 @@ footer .glyphicon {
 	color: white;
 }
 
+.button6 {
+	background-color: white;
+	color: black;
+	border: 2px solid #4CAF50;
+	margin-top: 25px;
+}
+
+.button6:hover {
+	background-color: #4CAF50;
+	color: white;
+}
 
 
 .phaz {
@@ -279,6 +290,3 @@ h2{
 	text-align: center;
 }
 
-#usernavb{
-	
-}

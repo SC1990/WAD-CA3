@@ -1,4 +1,5 @@
 <?php
+session_start();
 //isset() - Determine if a variable is set and is not NULL/check if exists
 //($_POST['remove']) - collect form data from form when user hits remove button 
 if(isset($_POST['remove'])){

@@ -17,6 +17,8 @@ else{
 	
   $_SESSION['id'] = $row['id'];
   $_SESSION['first'] = $row['first'];
+  $_SESSION['uname'] = $row['uname'];
+  $_SESSION['logged']=true;
 
 }
 header("Location: index.php");

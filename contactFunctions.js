@@ -1,3 +1,4 @@
+var harrypotter = 2;
 function clearSearch() {
   document.getElementById("suggestion").innerHTML = "";
   var form = document.getElementById("searchBar");
@@ -9,8 +10,7 @@ function searchContacts() {
   searchBox = document.getElementById("searchBox");
   searchBox.style.display = "block";
   //closeOpts(view);
-  closeView(), closeAdd(), closeEdit(), closeDel();
-  closeSign(), closeLog();
+  closeView(), closeAdd(), closeEdit(), closeDel(), closeComments();
 
 }
 
@@ -47,8 +47,8 @@ function addContact() {
 
   div = document.getElementById("addContact");
   div.style.display = "block";
-  closeSearch(), closeView(), closeEdit(), closeDel(), clearSearch();
-  closeSign(), closeLog();
+  closeSearch(), closeView(), closeEdit(), closeDel(), clearSearch(), closeComments();
+ 
 }
 
 
@@ -60,8 +60,7 @@ function editContact() {
   div = document.getElementById("editContact");
   div.style.display = "block";
 
-  closeSearch(), closeView(), closeAdd(), closeDel(), clearSearch();
-  closeSign(), closeLog();
+  closeSearch(), closeView(), closeAdd(), closeDel(), clearSearch(), closeComments();
 
 }
 
@@ -73,8 +72,7 @@ function getAllContacts() {
 
   div = document.getElementById("allContacts");
   div.style.display = "block";
-  closeSearch(), closeAdd(), closeEdit(), closeDel(), clearSearch();
-  closeSign(), closeLog();
+  closeSearch(), closeAdd(), closeEdit(), closeDel(), clearSearch(), closeComments();
 
 }
 
@@ -86,10 +84,19 @@ function deleteContact() {
 
   div = document.getElementById("deleteContactDiv");
   div.style.display = "block";
-  closeSearch(), closeView(), closeAdd(), closeEdit(), clearSearch(), closeSignDivs();
+  closeSearch(), closeView(), closeAdd(), closeEdit(), closeComments(), clearSearch();
 
   //btn = document.getElementById("deleteCbutton");
   // btn.onclick(alert("sjkbsb"));
+}
+
+function commentContact(){
+  fetchContacts("commentsDiv", "commentServer");
+
+
+  div = document.getElementById("commentsDiv");
+  div.style.display = "block";
+  closeSearch(), closeView(), closeAdd(), closeEdit(), clearSearch(), closeDel();
 }
 
 
@@ -161,8 +168,9 @@ function signOrLog(){
 }
 */
 
-function closeSignDivs() {
-  ob = document.getElementsByClassName("signdivs");
+
+function closeComments() {
+  ob = document.getElementById("commentsDiv");
   ob.style.display = "none";
 }
 

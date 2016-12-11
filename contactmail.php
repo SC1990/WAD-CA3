@@ -1,6 +1,7 @@
 <?php
 
- 
+session_start();
+
 if(isset($_POST['memail'])) {
  
      
@@ -19,14 +20,8 @@ if(isset($_POST['memail'])) {
  
         // your error code can go here
  
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
- 
-        echo "These errors appear below.<br /><br />";
- 
-        echo $error."<br /><br />";
- 
-        echo "Please go back and fix these errors.<br /><br />";
- 
+        $_SESSION['failmail'] = true;
+        header("Location: index.php");
         die();
  
     }

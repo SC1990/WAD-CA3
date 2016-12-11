@@ -1,12 +1,14 @@
 <?php
-
+session_start();
 //load xml file
 $xml=simplexml_load_file("contacts.xml");
 
 
 
 echo "
-
+<div class='container-fluid'>
+<div class='row'>
+<div class=col-md-12>
 <table border=3>
   <tr>
     <th>Name</th>
@@ -27,7 +29,7 @@ foreach($xml->contact as $contact){
   echo "<br />";
   echo "</tr>";
 }
-echo '</table>';
+echo "</table></div></div><div>";
 
 
 

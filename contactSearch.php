@@ -1,4 +1,5 @@
 <?php
+session_start();
 $contacts = simplexml_load_file("contacts.xml");
 //get value user entered
 $query = $_GET["query"];

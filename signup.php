@@ -25,6 +25,6 @@ else{
 	VALUES ('$first', '$last', '$user', '$pass')";
 
 	$result = $conn->query($signquery);
-
-	
+	header("Location: index.php");
+	$_SESSION['logged']=true;
 }
