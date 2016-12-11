@@ -196,6 +196,19 @@ footer .glyphicon {
 	color: white;
 }
 
+.button7 {
+	background-color: white;
+	color: black;
+	border: 2px solid #4CAF50;
+	margin-top: 25px;
+}
+
+.button7:hover {
+	background-color: #4CAF50;
+	color: white;
+}
+
+
 
 .phaz {
 	text-align: center;

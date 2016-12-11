@@ -16,3 +16,22 @@ textarea{
 	width: 65%;
 	margin-top:2%;
 }
+
+.comment-box{
+
+	width:815px;
+	padding: 20px;
+	margin-bottom: 20px;
+	margin-left: 60%;
+
+	background-color: #b3b3b3;
+	border-radius: 4px;
+	font-weight: 100;
+}
+
+.comment-box p{
+	font-family:arial;
+	font-size: 14px;
+	line-height: 16px;
+	color: #282828;
+}

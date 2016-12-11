@@ -10,7 +10,7 @@ function searchContacts() {
   searchBox = document.getElementById("searchBox");
   searchBox.style.display = "block";
   //closeOpts(view);
-  closeView(), closeAdd(), closeEdit(), closeDel(), closeComments();
+  closeView(), closeAdd(), closeEdit(), closeDel(), closeComments(), closevv();
 
 }
 
@@ -47,7 +47,7 @@ function addContact() {
 
   div = document.getElementById("addContact");
   div.style.display = "block";
-  closeSearch(), closeView(), closeEdit(), closeDel(), clearSearch(), closeComments();
+  closeSearch(), closeView(), closeEdit(), closeDel(), clearSearch(), closeComments(), closevv();
  
 }
 
@@ -60,7 +60,7 @@ function editContact() {
   div = document.getElementById("editContact");
   div.style.display = "block";
 
-  closeSearch(), closeView(), closeAdd(), closeDel(), clearSearch(), closeComments();
+  closeSearch(), closeView(), closeAdd(), closeDel(), clearSearch(), closeComments(), closevv();
 
 }
 
@@ -72,7 +72,7 @@ function getAllContacts() {
 
   div = document.getElementById("allContacts");
   div.style.display = "block";
-  closeSearch(), closeAdd(), closeEdit(), closeDel(), clearSearch(), closeComments();
+  closeSearch(), closeAdd(), closeEdit(), closeDel(), clearSearch(), closeComments(), closevv();
 
 }
 
@@ -84,7 +84,7 @@ function deleteContact() {
 
   div = document.getElementById("deleteContactDiv");
   div.style.display = "block";
-  closeSearch(), closeView(), closeAdd(), closeEdit(), closeComments(), clearSearch();
+  closeSearch(), closeView(), closeAdd(), closeEdit(), closeComments(), clearSearch(), closevv();
 
   //btn = document.getElementById("deleteCbutton");
   // btn.onclick(alert("sjkbsb"));
@@ -96,7 +96,16 @@ function commentContact(){
 
   div = document.getElementById("commentsDiv");
   div.style.display = "block";
-  closeSearch(), closeView(), closeAdd(), closeEdit(), clearSearch(), closeDel();
+  closeSearch(), closeView(), closeAdd(), closeEdit(), clearSearch(), closeDel(), closevv();
+}
+
+function viewComFn(){
+  fetchContacts("viewCommentsDiv", "viewcom");
+
+
+  div = document.getElementById("viewCommentsDiv");
+  div.style.display = "block";
+  closeSearch(), closeView(), closeAdd(), closeEdit(), clearSearch(), closeDel(), closeComments();
 }
 
 
@@ -174,3 +183,7 @@ function closeComments() {
   ob.style.display = "none";
 }
 
+function closevv() {
+  ob = document.getElementById("viewCommentsDiv");
+  ob.style.display = "none";
+}

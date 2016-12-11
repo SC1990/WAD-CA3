@@ -18,8 +18,10 @@ include 'dbc.php';
 	}
 
 $getquery = "SELECT * FROM comtbl";
+
 $getresult = $conn->query($getquery);
-$row = $getresult->fetch_assoc());
+
+
 
 
 	
@@ -42,6 +44,9 @@ $row = $getresult->fetch_assoc());
 			<textarea name = "cmessage" required = ""></textarea><br>
 			<button type="submit" id = "subcom" name="csubmit">Submit Comment</button>
 		</form>
+
+	
+
 	</div>
 	</div>
 	</body>

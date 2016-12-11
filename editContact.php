@@ -1,4 +1,5 @@
 <?php
+
 session_start();
 if(isset($_POST['rename'])){
  
@@ -46,11 +47,13 @@ if(isset($_POST['rename'])){
   //save data to contacts.xml
   file_put_contents("contacts.xml", $xml->asXML());
   
-  header('Location: index.php');
+  header("Location: index.php");
   exit;
   
   
 }
+
+
 
 ?>
 
@@ -85,7 +88,16 @@ if(isset($_POST['rename'])){
     <input type="text" name="newCompanyRole">
     <br>
     <br>
-    <input type="submit" name="rename" value="Save Changes">
+
+    <?php
+
+if($_SESSION['id']==1){
+  echo "
+    <input type='submit' name='rename' value='Save Changes'> ";
+  }
+?>
+
+
   </form>
   </body>
 </html>

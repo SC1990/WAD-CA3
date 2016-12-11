@@ -59,6 +59,7 @@ include 'dbc.php';
 
 
 
+
 			if($_SESSION['logged']==true){
 
 				echo 
@@ -107,8 +108,11 @@ include 'dbc.php';
 					<button class="button button5" id="deleteCbutton" onclick="deleteContact()">Delete Contact</button>
 					<div class="actionDivs" id="deleteContactDiv"></div>
 
-					<button class="button button6" id="commentCbutton" onclick="commentContact()">Comments</button>
+					<button class="button button6" id="commentCbutton" onclick="commentContact()">Add Comment</button>
 					<div class="actionDivs" id="commentsDiv"></div>
+
+					<button class="button button7" id="viewCommentsButton" onclick="viewComFn()">View Comments</button>
+					<div id="viewCommentsDiv"></div>
 				
 
 					<br>
@@ -122,7 +126,11 @@ include 'dbc.php';
 
 
 				'
-				;
+
+						;
+
+				
+				
 				
 			}
 

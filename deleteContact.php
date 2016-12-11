@@ -42,7 +42,6 @@ if(isset($_POST['remove'])){
   
 }
 
-
 ?>
 
   <html>
@@ -60,7 +59,13 @@ if(isset($_POST['remove'])){
       <br>
       <p>WARNING : Once remove button is clicked, contact will be PERMANENTLY deleted</p>
       <br>
-      <input type="submit" name="remove" value="Remove">
+      <?php
+      if($_SESSION['id']==1){
+        echo"
+      <input type='submit' name='remove' value='Remove'> ";
+    }
+?>
+
     </form>
   </body>
 
